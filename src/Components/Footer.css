@@ -1,0 +1,294 @@
+footer {
+    padding: 2% 5%;
+    background: #fafbfc;
+  }
+  
+  .footer_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .footer_menu-col1 {
+    padding: 20px 20px 20px 0;
+    width: 20%;
+  }
+  
+  .footer_menu-col1 > h1 {
+    color: gray;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+  .footer_menu-col1 > ul {
+    list-style: none;
+    margin: 10px 0 20px 0;
+  }
+  
+  .footer_menu-col1 > ul > li {
+    color: gray;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+  }
+  
+  .footer_menu-col2 {
+    padding: 20px;
+    width: 20%;
+  }
+  
+  .footer_menu-col2 > h1 {
+    color: gray;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+  .footer_menu-col2 > ul {
+    list-style: none;
+    margin: 10px 0 20px 0;
+  }
+  
+  .footer_menu-col2 > ul > li {
+    color: gray;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+  }
+  
+  .footer_menu-col3 {
+    padding: 20px;
+    width: 30%;
+  }
+  
+  .footer_menu-col3 > h1 {
+    color: gray;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+  .apps {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .apps > img {
+    width: 140px;
+    margin-right: 10px;
+  }
+  
+  .social {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .social > img {
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  .footer_menu-col4 {
+    padding: 20px 0 20px 20px;
+    width: 20%;
+  }
+  
+  .footer_menu-col4 > img {
+    margin-bottom: 20px;
+  }
+  
+  .search {
+    padding: 2% 0;
+  }
+  
+  .search > h1 {
+    color: gray;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+  .search > p {
+    margin: 20px 0;
+    color: gray;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .copyright > h1 {
+    color: gray;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  #contact {
+    font-size: 17px;
+    font-weight: 700;
+    color: gray;
+  }
+  
+  .office-address {
+    padding: 2% 0;
+  }
+  
+  .office-address > h1 {
+    color: gray;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .address {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  #location {
+    color: gray;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  #info {
+    color: gray;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  #tel {
+    font-size: 17px;
+    font-weight: 700;
+    color: gray;
+  }
+  
+  .description {
+    padding: 2% 0;
+  }
+  
+  .description > p {
+    color: gray;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 20px;
+    line-height: 1.5;
+  }
+  
+  #description-head1 {
+    color: gray;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+  #description-head2 {
+    color: gray;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 50px;
+  }
+  
+  #description-head3 {
+    color: gray;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 50px;
+  }
+  
+  #description-head4 {
+    color: gray;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 50px;
+  }
+  
+  #insider {
+    margin: 20px 0 15px 0;
+    color: gray;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+  #elite {
+    margin: 20px 0 15px 0;
+    color: gray;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+  #icon {
+    margin: 20px 0 15px 0;
+    color: gray;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+  #description-head5 {
+    color: gray;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 50px;
+  }
+  
+  #keep {
+    margin: 20px 0 15px 0;
+    color: gray;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+  #tips {
+    margin: 20px 0 15px 0;
+    color: gray;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+  #updates {
+    margin: 20px 0 15px 0;
+    color: gray;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  #explicit {
+    margin: 20px 0 15px 0;
+    color: gray;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+  #celebrity {
+    margin: 20px 0 15px 0;
+    color: gray;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+  #description-head6 {
+    color: gray;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 50px;
+  }
+  
+  #description-head7 {
+    color: gray;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 50px;
+  }
+  
+  #description-head8 {
+    color: gray;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 50px;
+  }
+  

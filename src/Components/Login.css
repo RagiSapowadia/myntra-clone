@@ -1,0 +1,104 @@
+.login-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: auto; /* Adjust as needed */
+    padding: 30px;
+    background-color: #f5f5f5; /* Light grey background */
+    width: 350px; /* Set a specific width for the container */
+    margin: 50px auto; /* Center the container horizontally with some top margin */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    background-color: #fff; /* White container background */
+  }
+  
+  .top-banner {
+    margin-bottom: 25px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    width: 100%; /* Make banner fill container width */
+  }
+  
+  .top-banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .login-signup-heading {
+    font-size: 1.3rem; /* Slightly smaller heading */
+    color: #282c3f;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .mobile-input-group {
+    display: flex;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  .country-code-dropdown {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    background-color: #fff;
+    color: #535766;
+    font-size: 0.9rem; /* Slightly smaller font */
+    width: 60px; /* Adjust width */
+    appearance: none; /* Remove default arrow */
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg fill="%23535766" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 12px;
+  }
+  
+  .mobile-number-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    font-size: 0.9rem; /* Slightly smaller font */
+    color: #282c3f;
+    width: calc(100% - 60px); /* Adjust width to fill remaining space */
+  }
+  
+  .continue-button {
+    background-color: #ff6161; /* Pink/Red button color from image */
+    color: white;
+    padding: 10px 20px; /* Adjust padding */
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .continue-button:hover {
+    background-color: #e64a4a;
+  }
+  
+  .agreement-text {
+    font-size: 0.7rem; /* Smaller font for agreement text */
+    color: #535766;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  
+  .agreement-text a {
+    color: #ff6161;
+  }
+  
+  .help-link {
+    font-size: 0.8rem;
+    color: #535766;
+    text-align: center;
+  }
+  
+  .help-link a {
+    color: #ff6161;
+  }
