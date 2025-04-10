@@ -84,7 +84,8 @@ export default function Home() {
           >
             {banner.map((el, index) => (
               <SwiperSlide key={index}>
-                <Link to={getSafeLink(el.brandName)}>
+               <Link to={`/products/${el.brandName.toLowerCase()}`}>
+                {/* <Link to={getSafeLink(el.brandName)}> */}
                   <img src={el.imageUrl} alt={`Brand ${index + 1}`} />
                 </Link>
               </SwiperSlide>

@@ -5,7 +5,7 @@ import "./NavBar.css";
 export default function NavBar({ onSearchChange }) {
   const handleSearchInput = (e) => {
     const query = e.target.value;
-    onSearchChange(query); 
+    onSearchChange(query);
   };
 
   return (
@@ -22,22 +22,40 @@ export default function NavBar({ onSearchChange }) {
 
           <div className="col container-fluid" id="navbarSupportedContent">
             <ul className="navbar-nav mb-2 mb-lg-0 flex-grow-1 col-lg-12 d-flex justify-content-evenly">
-              <Link className="nav-item dropdown text-decoration-none text-dark text-center col-lg-1 fw-bold" to="/men">
-                <span>Men</span>
+              <Link
+                className="nav-item text-decoration-none text-dark text-center fw-bold"
+                to="/products/men"
+              >
+                Men
               </Link>
-              <Link className="nav-item text-decoration-none text-dark text-center fw-bold" to="/women">
+              <Link
+                className="nav-item text-decoration-none text-dark text-center fw-bold"
+                to="/products/women"
+              >
                 Women
               </Link>
-              <Link className="nav-item text-decoration-none text-dark text-center fw-bold" to="/kids">
+              <Link
+                className="nav-item text-decoration-none text-dark text-center fw-bold"
+                to="/products/kids"
+              >
                 Kids
               </Link>
-              <Link className="nav-item text-decoration-none text-dark text-center fw-bold" to="/home-living">
+              <Link
+                className="nav-item text-decoration-none text-dark text-center fw-bold"
+                to="/products/home-living"
+              >
                 Home & Living
               </Link>
-              <Link className="nav-item text-decoration-none text-dark text-center fw-bold" to="/beauty">
+              <Link
+                className="nav-item text-decoration-none text-dark text-center fw-bold"
+                to="/products/beauty"
+              >
                 Beauty
               </Link>
-              <Link className="nav-item text-decoration-none text-dark text-center fw-bold" to="/studio">
+              <Link
+                className="nav-item text-decoration-none text-dark text-center fw-bold"
+                to="/products/studio"
+              >
                 Studio
               </Link>
             </ul>
@@ -55,7 +73,6 @@ export default function NavBar({ onSearchChange }) {
                 type="search"
                 placeholder="Search for products, brands and more"
                 aria-label="Search"
-                
                 onChange={handleSearchInput}
               />
             </form>
@@ -63,13 +80,22 @@ export default function NavBar({ onSearchChange }) {
 
           <div className="me-1">
             <ul className="row my-auto">
-              <Link className="text-dark text-decoration-none text-center col-3" to="/login">
+              <Link
+                className="text-dark text-decoration-none text-center col-3"
+                to="/login"
+              >
                 <i className="fa-solid fa-user fs-6"></i>Profile
               </Link>
-              <Link  className="text-dark text-decoration-none text-center col-4" to="/wishlist">
+              <Link
+                className="text-dark text-decoration-none text-center col-4"
+                to="/wishlist"
+              >
                 <i className="fa-solid fa-heart fs-6"></i>WishList
               </Link>
-              <Link className="text-dark text-decoration-none text-center col-3" to="/bagContainer">
+              <Link
+                className="text-dark text-decoration-none text-center col-3"
+                to="/bagContainer"
+              >
                 <i className="fa-solid fa-bag-shopping fs-6"></i>Bag
               </Link>
             </ul>

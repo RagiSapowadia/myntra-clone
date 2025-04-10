@@ -10,38 +10,54 @@ import ProductDetail from "./Components/ProductDetail";
 import { useState, useEffect } from "react";
 import BagContainer from "./Components/BagContainer";
 import WishListContainer from "./Components/WishListContainer";
-import SignUp from "./Components/SignUp";
 import Login from "./Components/Login";
 
 const ProductsWrapper = ({ productsData }) => {
-  const { brandName } = useParams();
-  const filteredProducts = productsData.filter(
-    (item) =>
-      item.brandName?.trim().toLowerCase() ===
-      decodeURIComponent(brandName)?.trim().toLowerCase()
+  const { brandName, gender } = useParams();
+
+  let filteredProducts = productsData;
+
+  if (brandName) {
+    filteredProducts = filteredProducts.filter(
+      (item) => item.brandName?.toLowerCase() === brandName.toLowerCase()
+    );
+  }
+
+  if (gender) {
+    filteredProducts = filteredProducts.filter(
+      (item) => item.gender?.toLowerCase() === gender.toLowerCase()
+    );
+  }
+
+  return (
+    <Products
+      products={filteredProducts}
+      title={`Products${brandName ? ` by ${brandName}` : ""}${gender ? ` for ${gender}` : ""}`}
+    />
   );
-  return <Products products={filteredProducts} title={`Products by ${brandName?.toUpperCase()}`} />;
 };
+
+
+
 
 const ProductDetailWrapper = ({ productsData }) => {
   const { id } = useParams();
   const product = productsData.find((p) => String(p.id) === id);
-  
+
   if (!product) return <div style={{ padding: "2rem" }}>Product not found</div>;
 
   return <ProductDetail product={product} />;
 };
 
-
-
 function Layout({ children }) {
   const location = useLocation();
-  const isLoginPage = location.pathname === '/login'; // Assuming your login page route is '/login'
+  const isLoginPage = location.pathname === "/login"; // Assuming your login page route is '/login'
 
   return (
     <div>
       {children}
-      {!isLoginPage && <Footer />} {/* Render Footer only if not on the login page */}
+      {!isLoginPage && <Footer />}{" "}
+      {/* Render Footer only if not on the login page */}
     </div>
   );
 }
@@ -52,6 +68,7 @@ function App() {
 
   const handleSearchChange = (query) => {
     setSearchQuery(query);
+    console.log(searchQuery)
   };
 
   useEffect(() => {
@@ -65,22 +82,22 @@ function App() {
     <div>
       <NavBar onSearchChange={handleSearchChange} />
       <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+<Route path="/products/:gender?"  element={<ProductsWrapper productsData={productsData} />} />
+<Route path="/products/:brandName?"  element={<ProductsWrapper productsData={productsData} />} />
 
-        <Route path="/login" element={<Login/>}/>
-        <Route
-          path="/products/:brandName"
-          element={<ProductsWrapper productsData={productsData} />}
-        />
-      <Route path="/product-detail/:id" element={<ProductDetailWrapper productsData={productsData} />} />
-   <Route path="/bagContainer" element={<BagContainer/>}/>
-   <Route path="/wishlist" element={<WishListContainer />} />
-        <Route path="*" element={<PageNotFound />} />
-      </Routes>
+          <Route
+            path="/product-detail/:id"
+            element={<ProductDetailWrapper productsData={productsData} />}
+          />
+          <Route path="/bagContainer" element={<BagContainer />} />
+          <Route path="/wishlist" element={<WishListContainer />} />
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
       </Layout>
-
     </div>
   );
 }
